@@ -58,6 +58,7 @@ Pretendo evoluir este projeto futuramente, considerando:
 - Uso das APIs ao atingir a idade mínima exigida
 - Busca por alternativas gratuitas ou open-source
 - Evolução do sistema para um assistente de voz mais completo
+- Criação de um assistente inspirado no Jarvis que rode em segundo plano no PC, ativando com uma wake word e desativando com outra palavra-chave, de forma que, enquanto inativo, o sistema apenas monitore ondas sonoras sem transcrever desnecessariamente, economizando processamento. Esse projeto futuramente poderia ser distribuído como um executável (.exe).
 
 ---
 
