@@ -1,83 +1,73 @@
-# 🎤 Conversão de Voz para ChatGPT com Whisper e Python
+# Conversão de Voz para ChatGPT com Whisper e Python
 
-Este projeto demonstra um pipeline completo de interação com inteligência artificial utilizando voz. O sistema captura áudio do usuário, converte em texto, envia para um modelo de IA e retorna a resposta em áudio.
+Projeto de aprendizagem desenvolvido como desafio da **DIO** para explorar um pipeline de interação por voz com IA.
 
----
+**Status:** Protótipo incompleto / desenvolvimento interrompido
 
-## 🚀 Funcionalidades
+Este repositório permanece público porque está vinculado ao projeto publicado na plataforma DIO.
 
-- 🎤 Gravação de áudio diretamente no navegador (Google Colab)
-- 🧠 Transcrição de áudio para texto com Whisper
-- 💬 Envio do texto para um modelo de IA (ChatGPT)
-- 🔊 Conversão da resposta em áudio utilizando gTTS
+## Objetivo
 
----
+A proposta era construir um fluxo capaz de:
 
-## 🧠 Como funciona
+```text
+Áudio -> transcrição -> modelo de IA -> resposta -> áudio
+```
 
-Áudio → Transcrição (Whisper) → IA → Resposta → Áudio
+O notebook explora:
 
----
+- gravação de áudio no navegador em Google Colab;
+- transcrição com Whisper;
+- integração planejada com um modelo de IA;
+- síntese de voz com gTTS.
 
-## ⚙️ Tecnologias utilizadas
+## Tecnologias
 
 - Python
-- Whisper (OpenAI)
-- JavaScript (MediaStream API)
-- gTTS (Google Text-to-Speech)
+- Whisper
+- JavaScript / MediaStream API
+- gTTS
 - Google Colab
 
----
+## Estado atual
 
-## ⚠️ Limitações encontradas
+A captura de áudio, o processamento em Python e a transcrição com Whisper foram estudados e integrados ao notebook. A etapa de interação em tempo real com um modelo externo não foi concluída.
 
-Durante o desenvolvimento deste projeto, algumas limitações importantes foram identificadas:
+Durante o desenvolvimento, a integração original dependia da API da OpenAI, cujo uso contínuo exige créditos pagos. Uma alternativa com Gemini também não pôde ser utilizada naquele momento devido aos requisitos de idade da conta.
 
-- A API da OpenAI, utilizada originalmente, atualmente é paga e não oferece mais acesso gratuito contínuo.
-- A tentativa de utilizar a API do Gemini como alternativa não foi viável devido à exigência de idade mínima (18 anos) para criação e uso da conta.
-- Por esses motivos, não foi possível concluir totalmente a integração com APIs de IA em tempo real.
+Por isso, este repositório deve ser interpretado como um **protótipo de aprendizagem**, e não como um assistente de voz finalizado.
 
----
+## Arquivo principal
 
-## 📌 Observações
+```text
+Assistente_de_Voz_Multi_Idiomas_Com_Whisper_e_ChatGPT.ipynb
+```
 
-Apesar das limitações externas, o projeto foi desenvolvido e compreendido em sua totalidade, incluindo:
+O notebook concentra a experimentação com captura, transcrição e estrutura do fluxo de resposta por voz.
 
-- Captura de áudio via navegador utilizando JavaScript
-- Processamento e manipulação de dados em Python
-- Uso de modelos de transcrição de fala (speech-to-text)
-- Estruturação de integração com APIs de inteligência artificial
+## Limitações
 
----
+- integração com LLM externo não concluída;
+- dependência de serviços externos para algumas etapas;
+- execução pensada para Google Colab, não como aplicação desktop;
+- ausência de empacotamento ou interface de produção.
 
-## 🔮 Trabalhos futuros
+## Possíveis evoluções
 
-Pretendo evoluir este projeto futuramente, considerando:
+Caso o projeto seja retomado, caminhos possíveis incluem:
 
-- Utilização de APIs pagas quando houver condição financeira
-- Uso das APIs ao atingir a idade mínima exigida
-- Busca por alternativas gratuitas ou open-source
-- Evolução do sistema para um assistente de voz mais completo
-- Criação de um assistente inspirado no Jarvis que rode em segundo plano no PC, ativando com uma wake word e desativando com outra palavra-chave, de forma que, enquanto inativo, o sistema apenas monitore ondas sonoras sem transcrever desnecessariamente, economizando processamento. Esse projeto futuramente poderia ser distribuído como um executável (.exe).
+- uso de um modelo local ou alternativa open source;
+- separação do pipeline em módulos independentes;
+- interface própria fora do Colab;
+- ativação por wake word;
+- empacotamento como aplicação desktop.
 
----
+## Créditos
 
-## 🙏 Créditos
-
-A implementação da gravação de áudio foi baseada no seguinte código:
+A implementação da gravação de áudio foi adaptada a partir de:
 
 https://gist.github.com/korakot/c21c3476c024ad6d56d5f48b0bca92be
 
-Essa parte foi adaptada e integrada ao restante do projeto.
+## Licença
 
----
-
-## 📄 Licença
-
-Este projeto está sob a licença MIT.
-
----
-
-## 💡 Conclusão
-
-Este projeto representa não apenas uma implementação técnica, mas também a adaptação a mudanças reais no ecossistema de tecnologia. Mesmo com limitações externas, o aprendizado sobre integração de IA, áudio e automação foi plenamente alcançado.
+MIT License.
